@@ -1,0 +1,21 @@
+{
+  "name": "ReactApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "browserify -t babelify src -o public/bundle.js --extension=.js --extension=.jsx",
+    "dev": "watchify -t babelify src -o public/bundle.js --extension=.js --extension=.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://oses.homedepot.com/BXM0083/react-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^6.1.1",
+    "react": "^0.13.3"
+  }
+}
